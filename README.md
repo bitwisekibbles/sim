@@ -22,13 +22,77 @@ set {var} = {expression}
 %{variable}%
 
 :: Run an external program
-start {program} {args}
+start {program} , {args}
 
 :: Clear Screen
 clear
 
-:: 
+:: Label
+:{name}
 
+:: Goto a Label
+goto {name}
+
+:: Set Color
+color {foreground} , {background}
+
+:: Set Terminal Mode (feed, dynamic)
+mode {mode}
+
+:: Operators
++
+-
+*
+/
+<
+>
+<=
+>=
+^
+%
+&
+|
+!
+
+:: Stream Control
+write {text} , {file}
+
+append {text} , {file}
+
+pipe {input} , {output}
+
+:: Control Flow
+
+:: if
+if ({conditional}) ({expression))
+
+:: switch
+switch ({conditional})
+  {value}:
+  default:
+  
+:: looping
+
+:: infinite loop
+for ()
+
+:: infinite w/ initialization
+for (set {var} = {expression})
+(
+
+)
+
+:: initialization + boundary
+for (set {var} = {expression} , {bounds condition})
+(
+
+)
+
+:: initialization + boundary + increment
+for (set {var} = {expression} , {bounds condition} , {increment expression})
+(
+
+)
 ```
 
 ## Examples
