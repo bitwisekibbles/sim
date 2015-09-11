@@ -5,7 +5,11 @@ Sim is a programming language which attempts to be *extremely* simple to use. Si
 ## Resources
 
 [Language Rationale](RATIONALE.md)
+
 [The Sim Scripting Language](TSSL.md)
+
 [Example Code](EXAMPLE.md)
+
 [The simc Compiler](SIMC.md)
+
 [The simi Interpreter](SIMI.md)
